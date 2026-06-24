@@ -122,6 +122,8 @@ jobs:
           body_path: ${{ github.workspace }}/router-info.md
           files: |
             ${{ github.workspace }}/bin/targets/x86/64/*squashfs-combined-efi.img.gz
+            # jeff activated for VMDK upload
+            ${{ github.workspace }}/bin/targets/x86/64/*squashfs-combined-efi.vmdk*
           token: ${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
